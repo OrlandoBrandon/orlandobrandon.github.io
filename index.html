@@ -14,14 +14,14 @@
 	<body class="is-preload">
 
 		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/UNCC LOGO.jpeg" alt="" /></a>
-					<h1><strong>Hello, I am Omar</strong>,<a href=""></a> Data Science student at UNC Charlotte<br />
-						Graduating in May 2025. <br />
-					
-				</div>
-			</header>
+		<header id="header">
+			<div class="inner">
+				<a href="#" class="image avatar">
+					<img src="images/UNCC LOGO.jpeg" alt="Profile Image" />
+				</a>
+				<h1><strong>Orlando Brandon</strong></h1>
+			</div>
+		</header>
 
 		<!-- Main -->
 			<div id="main">
@@ -29,13 +29,11 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>Exploring the Intersection of Sports, Business, Analytics, and Strategy<br />
+							<h2><span id="typewriter"></span></h2>
+
 							
 						</header>
 						<p>I am passionate about harnessing the power of data to uncover patterns, solve complex challenges, and drive meaningful change. With a keen interest in predictive modeling and analytics, I find joy in applying these skills to areas like sports and sports betting, where strategy meets data-driven insights. My mission is to explore innovative solutions that blend technical expertise with real-world applications, creating impactful results in both professional and personal pursuits.</p>
-						<ul class="actions">
-							<li><a href="#" class="button">About Omar</a></li>
-						</ul>
 					</section>
 
 				<!-- Direct Link to Jupyter Notebook -->
@@ -52,47 +50,18 @@
 
 
 				<!-- Two -->
-					<section id="two">
-						<h2>Recent Work</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-    <a href="https://nbviewer.org/github/OrlandoBrandon/portfolio/blob/main/Project_1/sports_betting_data.ipynb" 
-       target="_blank" class="image fit">
-       <img src="images/thumbs/01.jpg" alt="Project 1 Thumbnail" />
-    </a>
-    <h3>Project 1</h3>
-    <p>If there is an issue opening the file, please let me know.</p>
-</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>Project 2</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Project 3</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Project 4</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Project 5</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Project 6</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-						</div>
-						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul>
-					</section>
+				<section id="recent-work">
+					<h2>Recent Work</h2>
+					
+					<div class="project-card">
+						<img src="" alt="Sports Betting Data Analysis">
+
+						<h3>📊 Project 1: Sports Betting Data Analysis</h3>
+						<p>You can view my Jupyter Notebook analysis here:</p>
+						<a href="https://nbviewer.org/github/OrlandoBrandon/portfolio/blob/main/Project_1/sports_betting_data.ipynb" class="button">📂 View Analysis</a>
+					</div>
+				</section>
+				
 
 				<!-- Three -->
 					<section id="three">
@@ -474,6 +443,26 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					const text = "Transforming Data into Winning Strategies: Sports, Business, and Analytics.";
+					const speed = 50; // Typing speed in milliseconds
+					let i = 0;
+			
+					function typeWriter() {
+						if (i < text.length) {
+							document.getElementById("typewriter").innerHTML += text.charAt(i);
+							i++;
+							setTimeout(typeWriter, speed);
+						}
+					}
+			
+					typeWriter(); // Start the typewriter effect
+				});
+			</script>
+			</body>
+			</html>
+			
 
 	</body>
 </html>
