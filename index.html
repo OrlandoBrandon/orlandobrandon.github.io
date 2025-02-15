@@ -4,13 +4,15 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
+
 	<head>
 		<title>Strata by HTML5 UP</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/css/main.css?v=3">
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Header -->
@@ -33,34 +35,76 @@
 
 							
 						</header>
-						<p>I am passionate about harnessing the power of data to uncover patterns, solve complex challenges, and drive meaningful change. With a keen interest in predictive modeling and analytics, I find joy in applying these skills to areas like sports and sports betting, where strategy meets data-driven insights. My mission is to explore innovative solutions that blend technical expertise with real-world applications, creating impactful results in both professional and personal pursuits.</p>
+						<p>I am passionate about harnessing the power of data to uncover patterns, solve complex challenges, and—most importantly—prevent myself from making terrible betting decisions. With a keen interest in predictive modeling and analytics, I find joy in applying these skills to areas like sports and sports betting, where strategy meets data-driven insights (because gut feelings don’t pay the bills). My mission is to explore innovative solutions that blend technical expertise with real-world applications, creating impactful results in both professional and personal pursuits—like finally figuring out why the last leg my parlay keeps losing.</p>
+						<div class="stats-container">
+							<div class="stat">
+								<h3><span class="counter" data-target="10000">0</span>+</h3>
+								<p>Sports Bets Analyzed</p>
+							</div>
+							<div class="stat">
+								<h3><span class="counter" data-target="85">0</span>%</h3>
+								<p>Prediction Accuracy</p>
+							</div>
+							<div class="stat">
+								<h3><span class="counter" data-target="500000">0</span>+</h3>
+								<p>Data Points Processed</p>
+							</div>
+						</div>
+						<section id="skills">
+							<h2>My Skillset</h2>
+						
+							<div class="skill">
+								<p>Python</p>
+								<div class="progress-bar"><div class="fill" data-percent="90"></div></div>
+							</div>
+						
+							<div class="skill">
+								<p>SQL</p>
+								<div class="progress-bar"><div class="fill" data-percent="85"></div></div>
+							</div>
+						
+							<div class="skill">
+								<p>Machine Learning</p>
+								<div class="progress-bar"><div class="fill" data-percent="80"></div></div>
+							</div>
+						
+							<div class="skill">
+								<p>Data Visualization</p>
+								<div class="progress-bar"><div class="fill" data-percent="75"></div></div>
+							</div>
+						</section>
+						
+						
 					</section>
+					<a href="your_resume_link.pdf" class="cta-box">
+						📄 View My Resume
+					</a>
+					
 
-				<!-- Direct Link to Jupyter Notebook -->
-<section id="notebook-link">
-    <h2>Project 1: Sports Betting Data Analysis</h2>
-    <p>
-        You can view my Jupyter Notebook analysis here: 
-        <a href="https://nbviewer.org/github/OrlandoBrandon/portfolio/blob/main/Project_1/sports_betting_data.ipynb" 
-           target="_blank">
-           Sports Betting Data Analysis Notebook
-        </a>.
-    </p>
-</section>
+
+				
 
 
 				<!-- Two -->
 				<section id="recent-work">
 					<h2>Recent Work</h2>
-					
+				
 					<div class="project-card">
 						<img src="" alt="Sports Betting Data Analysis">
-
 						<h3>📊 Project 1: Sports Betting Data Analysis</h3>
 						<p>You can view my Jupyter Notebook analysis here:</p>
 						<a href="https://nbviewer.org/github/OrlandoBrandon/portfolio/blob/main/Project_1/sports_betting_data.ipynb" class="button">📂 View Analysis</a>
 					</div>
+
+					<div class="project-card">
+						<img src="" alt="Blood Pressure Analysis">
+						<h3>📊 Project 2</h3>
+						<p>You can view my Jupyter Notebook analysis here:</p>
+						<a href="" class="button">📂 View Analysis</a>
+					</div>
+
 				</section>
+				
 				
 
 				<!-- Three -->
@@ -437,32 +481,127 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script>
-				document.addEventListener("DOMContentLoaded", function () {
-					const text = "Transforming Data into Winning Strategies: Sports, Business, and Analytics.";
-					const speed = 50; // Typing speed in milliseconds
-					let i = 0;
-			
-					function typeWriter() {
-						if (i < text.length) {
-							document.getElementById("typewriter").innerHTML += text.charAt(i);
-							i++;
-							setTimeout(typeWriter, speed);
-						}
-					}
-			
-					typeWriter(); // Start the typewriter effect
-				});
+		<!-- Ensure jQuery is Loaded First -->
+<script src="assets/js/jquery.min.js"></script>
+
+<!-- Other JavaScript Files -->
+<script src="assets/js/jquery.poptrox.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+		
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const text = "Transforming Data into Winning Strategies: Sports, Business, and Analytics.";
+		const speed = 50; // Typing speed in milliseconds
+		let i = 0;
+	
+		function typeWriter() {
+			if (i < text.length) {
+				document.getElementById("typewriter").innerHTML += text.charAt(i);
+				i++;
+				setTimeout(typeWriter, speed);
+			}
+		}
+	
+		typeWriter(); // Start the typewriter effect
+	});
+	</script>
+	
 			</script>
 			</body>
 			</html>
-			
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					const counters = document.querySelectorAll(".counter");
+					
+					function startCounters() {
+						counters.forEach(counter => {
+							counter.innerText = "0";
+							const target = +counter.getAttribute("data-target");
+							const increment = target / 100; // Adjust speed
+							let count = 0;
+				
+							function updateCounter() {
+								if (count < target) {
+									count += increment;
+									counter.innerText = Math.ceil(count);
+									setTimeout(updateCounter, 20);
+								} else {
+									counter.innerText = target;
+								}
+							}
+				
+							updateCounter();
+						});
+					}
+				
+					// Run when the section is visible
+					let observer = new IntersectionObserver(entries => {
+						if (entries[0].isIntersecting) {
+							startCounters();
+							observer.disconnect(); // Run only once
+						}
+					});
+				
+					observer.observe(document.querySelector(".stats-container"));
+				});
+				</script>
+				
+				
+				<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					let progressBars = document.querySelectorAll(".fill");
+					let skillSection = document.querySelector("#skills");
+				
+					function updateProgressBars() {
+						progressBars.forEach(bar => {
+							let percent = bar.getAttribute("data-percent");
+							bar.style.width = percent + "%";
+						});
+					}
+				
+					function checkIfInView() {
+						let rect = skillSection.getBoundingClientRect();
+						let windowHeight = window.innerHeight || document.documentElement.clientHeight;
+						return (rect.top <= windowHeight && rect.bottom >= 0);
+					}
+				
+					let observer = new IntersectionObserver(entries => {
+						if (entries[0].isIntersecting) {
+							updateProgressBars();
+							observer.disconnect(); // Run only once
+						}
+					});
+				
+					// Observe the skill section
+					observer.observe(skillSection);
+				
+					// Run immediately if already in view
+					if (checkIfInView()) {
+						updateProgressBars();
+					}
+				});
+				</script>
+				
+				<!-- JavaScript Files -->
+				
 
-	</body>
-</html>
+				<script>
+					document.addEventListener("DOMContentLoaded", function () {
+						let progressBars = document.querySelectorAll(".fill");
+					
+						progressBars.forEach(bar => {
+							let percent = bar.getAttribute("data-percent");
+							bar.style.width = percent + "%"; // Update width dynamically
+						});
+					});
+					</script>
+					
+
+					<script src="assets/js/main.js"></script>
+				</body>
+				</html>
+				
