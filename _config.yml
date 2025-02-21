@@ -1,0 +1,5 @@
+title: "My Portfolio"
+description: "A personal website built with Jekyll"
+baseurl: ""  # Leave this empty for GitHub Pages
+url: "https://orlandobrandon.github.io"  # Update with your GitHub Pages URL
+theme: minima  # Remove this if using a custom theme
