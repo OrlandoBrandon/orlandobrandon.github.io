@@ -3263,6 +3263,7 @@ input, select, textarea {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    text-align: left; /* Ensures proper alignment */
 }
 
 /* Individual Skill */
@@ -3290,28 +3291,20 @@ input, select, textarea {
 .fill {
     display: block;
     height: 100%;
-    width: 90% !important; /* Force visibility */
     background: linear-gradient(45deg, #4CAF50, #2E8B57);
     border-radius: 8px;
     transition: width 2s ease-in-out;
 }
-* {
-    filter: none !important;
+
+/* Make Sure It's Always Visible on Desktop */
+@media (min-width: 1024px) {
+    #skills {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
 }
-/* Override -ms-filter from FontAwesome */
-.fa-rotate-90, 
-.fa-rotate-180, 
-.fa-rotate-270, 
-.fa-flip-horizontal, 
-.fa-flip-vertical {
-    -ms-filter: none !important;
-}
-.progress-bar {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    min-width: 150px !important; /* Prevents shrinking */
-}
+
 
 
 
